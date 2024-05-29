@@ -1,10 +1,16 @@
 import React from 'react'
 import {data} from '../restApi.json'
+import { useNavigate } from 'react-router-dom'
 const Menu = () => {
+  let navigate = useNavigate()
   return (
     <>
       <section className='menu' id='menu'>
+        
         <div className="container">
+        <div>
+        <h1 onClick={()=>navigate("/")} style={{cursor:"pointer",fontSize:"40px"}}>HOME</h1>
+        </div>
             <div className="heading_section">
                 <h1 className="heading">POPULAR DISHES</h1>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga, iusto dolorem! Voluptatibus ipsum nam mollitia architecto. Soluta pariatur eius et recusandae veritatis. Quasi, et molestias!</p>
